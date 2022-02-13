@@ -1,0 +1,300 @@
+.w{
+    padding: 50px;
+    background: rgb(174, 177, 11);
+    
+}
+.q{
+    
+    text-align: center;
+    text-decoration: underline firebrick;
+    height:200px;
+    border-radius:20px; 
+    box-shadow: 1px 2px 5px black;
+    background: radial-gradient(#fffb00, #2ffa07);
+}
+.e{
+    text-align: centert;
+    padding: 10px;
+}
+.r:hover::before{
+    content:'❤' ;
+}
+.r:hover::after{
+    content:'❤' ;
+}
+.t{
+    background-position: auto auto;
+    box-shadow: 10px 5px 10px blueviolet;
+align-content: flex-end;
+display: flex;
+list-style-type: none;
+font-size: 70px;
+text-align: center;
+margin: 150px 0px 0px 0px;
+
+}
+.y{
+    margin: 10px;
+    height: 200px;
+    width: 200px;
+    background-color: #fffb00;
+    ;
+}
+.u{
+    margin: 10px;
+    height: 200px;
+    width: 200px;
+    background-color: #09f530;
+}
+.i{
+    margin: 10px;
+    height: 200px;
+    width: 200px;
+    background-color: #ff1e00;
+}
+.o{
+    margin: 10px;
+    height: 200px;
+    width: 200px;
+    background-color: #2f00ff;
+}
+.p{
+    margin: 10px;
+    height: 200px;
+    width: 200px;
+    background-color: #f700ff;
+}
+
+.a{ 
+    list-style-type: none;
+    
+}
+.s{
+    width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background: lightblue;
+  margin: 1px;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+animation-name: a;
+animation-direction: alternate;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+  }
+
+ 
+.d{
+    width: 40px;
+    height: 40px;
+    background: #fffb00;
+    margin: 2px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    animation-name: i;
+    animation-direction: alternate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.f{
+    width: 40px;
+    height: 40px;
+    background: #00ffdd;
+    margin: 3px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    animation-name: d;
+    animation-direction: alternate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.g{
+    width: 40px;
+    height: 40px;
+    background: #ff00dd;
+    margin: 4px;
+    border-radius: 50%;
+    position: relative;
+    text-align: center;
+    animation-name: aa;
+    animation-direction: alternate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+.h{
+    width: 40px;
+    height: 40px;
+    background: #ff000d;
+    margin: 5px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    animation-name: n ;
+    animation-direction: alternate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes a{
+
+    0%{
+    left: 0%;
+    }
+    50%{
+    border-radius: 0%;
+    }
+    100%{
+    left: 10%;
+    }
+    }
+    @keyframes i{
+
+        0%{
+        left: 0%;
+        }
+        50%{
+        border-radius: 0%;
+        }
+        100%{
+        left: 11%;
+        }
+        }
+        @keyframes d{
+
+            0%{
+            left: 0%;
+            }
+            50%{
+            border-radius: 0%;
+            }
+            100%{
+            left: 12%;
+            }
+            }
+            @keyframes aa{
+
+                0%{
+                left: 0%;
+                }
+                50%{
+                border-radius: 0%;
+                }
+                100%{
+                left: 13%;
+                }
+                }
+                @keyframes n{
+
+                    0%{
+                    left: 0%;
+                    }
+                    50%{
+                    border-radius: 0%;
+                    }
+                    100%{
+                    left: 14%;
+                    }
+                    }
+                .card{
+                        height: 340px;
+                        width: 250px;
+                        position: relative;
+                        transition: all 1s linear;
+                        transform-style: preserve-3d;
+                        
+                       
+                    }
+                    
+                    .front,
+                    .back{
+                        height: 100%;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 3em;
+                        font-family: 'Lobster', cursive;
+                        border-radius: 10px;
+                        position: absolute;
+                      
+                    }
+                    
+                    .front{
+                        background: linear-gradient(#08aeea, #2af598);
+                        z-index: 2;
+                        backface-visibility: hidden;
+                    
+                    }
+                    
+                    .back{
+                        background: linear-gradient(#f8da61, #ff5acd);
+                        z-index: 1;
+                        transform: rotateY(180deg);
+                       
+                    }
+                    
+                    .container:hover .card{
+                        transform: rotateY(180deg);
+                      
+                    }
+                    
+                    .container{
+                        perspective: 1000px;
+                      
+                    }
+                    .heart {
+                        animation: heartbeat 1s infinite;
+                        background-color: red;
+                        display: inline-block;
+                        height: 50px;
+                        margin: 0 10px;
+                        position: relative;
+                        top: 0;
+                        transform: rotate(-45deg);
+                        position: absolute; 
+                        left: 45%; top: 45%;
+                        width: 50px;
+                      }
+                      
+                      .heart:before,
+                      .heart:after {
+                        content: "";
+                        background-color: red;
+                        border-radius: 50%;
+                        height: 50px;
+                        position: absolute;
+                        width: 50px;
+                      }
+                      
+                      .heart:before {
+                        top: -25px;
+                        left: 0;
+                      }
+                      
+                      .heart:after {
+                        left: 25px;
+                        top: 0;
+                      }
+                      
+                      @keyframes heartbeat
+                      {
+                        0%
+                        {
+                          transform: scale( 1 )
+                            rotate(-45deg);    
+                        }
+                        20%
+                        {
+                          transform: scale( 1.25 )
+                            rotate(-45deg);  
+                        }
+                         40%
+                        {
+                          transform: scale( 1.5 )
+                            rotate(-45deg);
+                        }
+                      }
